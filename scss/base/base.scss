@@ -1,0 +1,64 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './mixins-extends.scss';
+@import '../blocks/header.scss';
+@import '../blocks/profile.scss';
+@import '../blocks/partners.scss';
+@import '../blocks/touch.scss';
+@import '../blocks/service.scss';
+@import '../blocks/dream.scss';
+@import '../blocks/footer.scss';
+
+section {
+    width: 1920px;
+    margin: 0 auto 0;
+    @media (max-width:428px){
+        width: 428px;
+    }
+}
+body {
+    font-family: $main-font;
+    @media (max-width:428px){
+        text-align: center;
+    }
+}
+.start {
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+    background-color: $accent-color;
+    a {
+        @include font-style ($white-color,14px,400,171%,none);
+        @extend %flex-center;
+        img {
+            margin-left: 8px;
+        }
+    }
+}
+.for-pc {
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.for-mobile {
+    display: none;
+    @media (max-width:428px){
+        display: inline;
+    }
+}
+.point {
+    color: $accent-color;
+    display: inline;
+}
+.title {
+    @include font-style ($main-color,40px,700,none,0.01em);
+    text-transform: capitalize;
+    text-align: center;
+}
+.short {
+    @include font-style ($accent-color,20px,500,150%,0.01em);
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 12px;
+}

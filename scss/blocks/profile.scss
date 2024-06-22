@@ -1,0 +1,138 @@
+.profile {
+    width: 1920px;
+    height: 784px;
+    background-color: $white-color;
+    @media (max-width:428px){
+        width: 428px;
+        height: 575px;
+        // height: 184px;
+    }
+}
+.profile__content {
+    width: 1213px;
+    height: 527px;
+    @extend %flex-column;
+    margin: 114px auto 0;
+    justify-content: none;
+    @media (max-width:428px){
+        width: 344px;
+        height: 391px;
+        margin: 184px auto 0;
+        position: relative;
+    }
+}
+.profile__content__top {
+    width: 328px;
+    @media (max-width:428px){
+        // margin-top: 53.08px;
+    }
+}
+.profile__content__bottom {
+    @extend %flex-center;
+    margin-top: 94px;
+    @media (max-width:428px){
+        margin-top: 30px;
+    }
+}
+.span-for-pc {
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.profile-picture {
+    position: relative;
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.profile-picture-none {
+    display: none; 
+    position: relative;
+    @media (max-width:428px) {
+        display: block;
+        // padding-bottom: 100px;
+        position: absolute;
+        bottom: 444.08px;
+        // top: 0;
+    }
+}
+.swipe {
+    width: 90px;
+    height: 3px;
+    @extend %flex-row;
+    position: absolute;
+    bottom: 9px;
+    left: 238px;
+    @media (max-width:428px){
+        top: 216px;
+        left: 127px;
+    }
+}
+.picture1 {
+    width: 16px;
+    height: 3px;
+    opacity: 0.3;
+    background-color: $white-color;
+    border-radius: 1px;
+}
+.picture2 {
+    width: 24px;
+    height: 3px;
+    background-color: $white-color;
+    border-radius: 1px;
+}
+.picture3 {
+    width: 16px;
+    height: 3px;
+    opacity: 0.3;
+    background-color: $white-color;
+    border-radius: 1px;
+}
+.picture4 {
+    width: 16px;
+    height: 3px;
+    opacity: 0.3;
+    background-color: $white-color;
+    border-radius: 1px;
+}
+.profile-text {
+    width: 611px;
+    height: 373.85px;
+    margin-left: 36px;
+    position: relative;
+    p{
+        margin-top: 117px;
+        @include font-style ($mini-color,14px,400,171%,none);
+        @media (max-width:428px){
+            margin-top: 38px;
+        }
+    }
+    @media (max-width:428px){
+        margin: 0 auto 0;
+        width: 320px;
+        height: 272px;
+    }
+}
+.profile-figure {
+    position: absolute;
+    left: 145px;
+    top: 0;
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.profile-img {
+    @media (max-width:428px){
+        width: 344px;
+        height: 230px;
+    }
+}
+.profile-figure-none {
+    display: none;
+    @media (max-width:428px){
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 33.93px;
+    }
+}

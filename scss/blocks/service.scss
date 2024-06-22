@@ -1,0 +1,93 @@
+.service {
+    height: 665px;
+    background-color: $white-color;
+}
+.service__content {
+    width: 1057px;
+    margin: 0 auto 0;
+    padding-top: 120px;
+    @extend %flex-row;
+    @media (max-width:428px){
+        width: 344px;
+        padding-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+.service__content__left {
+    width: 350px;
+    @media (max-width:428px){
+        width: 345px;
+        padding-top: 246px;
+    }
+    h2 {
+        text-align: start;
+        @media (max-width:428px){
+            text-align: center;
+        }
+    }
+    p {
+        text-align: start;
+        @media (max-width:428px){
+            text-align: center;
+        }
+    }
+}
+.address {
+    margin: 54px 0 0 1px;
+    width: 317px;
+    height: 120px;
+    @extend %flex-column;
+    align-items: normal;
+    gap: 24px;
+    @media (max-width:428px){
+        margin: 70px 9px 0 9px;
+    }
+}
+.contacts {
+    border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: $accent-color;
+    @extend %flex-center;
+}
+.contacts-address {
+    @extend %flex-line;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+    p {
+        @include font-style ($main-color,16px,700,150%,0.01em);
+    }
+}
+.service__content__right {
+    width: 643px;
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.map {
+    border-radius: 20px;
+    width: 643px;
+    height: 425px;
+    background: url(../../img/service/image\ 129.png);
+    @media (max-width:428px){
+        display: none;
+    }
+}
+.map-none {
+    display: none;
+    @media (max-width:428px){
+        display: block;
+        border-radius: 20px;
+        width: 344px;
+        height: 227px;
+        background: url(../../img/service/image\ 129\ \(1\).png);
+        position: absolute;
+        bottom: 353.63px;
+        // bottom: 550.63px;
+    }
+ 
+}

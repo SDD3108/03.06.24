@@ -1,0 +1,28 @@
+@mixin font-style ($color,$fs,$fw,$lh,$ls){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-line {
+    display: flex;
+}
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%grid {
+    display: grid;
+}

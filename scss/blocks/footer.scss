@@ -1,0 +1,101 @@
+.footer {
+    width: 1920px;
+    height: 394px;
+    margin: 0 auto 0;
+    background-color: $footer-bg;
+    @media (max-width:428px){
+        width: 428px;
+        height: 854px;
+        text-align: start;
+    }
+}
+.footer__content {
+    width: 1080px;
+    margin: 0 auto 0;
+    padding-top: 50px;
+    @extend %flex-line;
+    @media (max-width:428px){
+        width: 264px;
+        height: 669px;
+        padding-top: 49px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.footer-logo {
+    width: 238px;
+    @media (max-width:428px){
+        width: 238px;
+        height: 143px;
+    }
+}
+.num-address {
+    margin-top: 35px;
+    @media (max-width:428px){
+        width: 238px;
+    }
+}
+.footer-description{
+    @include font-style ($white-color,14px,400,171%,none)
+}
+.footer-address {
+    margin-top: 8px;
+}
+.learn-social {
+    display: none;
+    @media (max-width:428px){
+        width: 264px;
+        height: 228px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+.learn {
+    width: 104px;
+    margin-left: 110px;
+    @media (max-width:428px) {
+        margin-left: 0;
+    }
+}
+.footer-title {
+    @include font-style ($white-color,20px,500,150%,0.01em);
+    text-align: start;
+    // text-transform: capitalize;
+}
+.description-block {
+    max-width: 74px;
+    height: 168px;
+    @extend %flex-column;
+    gap: 12px;
+    align-items: start;
+    margin-top: 30px;
+}
+.social {
+    width: 64px;
+    margin-left: 96px;
+    @media (max-width:428px) {
+        margin-left: 0;
+    }
+}
+.downloads {
+    @extend %flex-column;
+    gap: 30px;
+    margin-left: 288px;
+    text-align: start;
+    align-items: start;
+    @media (max-width:428px){
+        margin-left: 0;
+        width: 180px;
+        height: 234px;
+        margin-top: 49px;
+    }
+}
+.get-it {
+    border: 2px solid $white-color;
+    border-radius: 5px;
+    width: 180px;
+    height: 72px;
+    @extend %flex-center;
+}
